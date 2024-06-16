@@ -66,7 +66,7 @@ async function loadData() {
       return;
     }
 
-    if (totalHits > 0) {
+    if (totalHits > 0 && loadedItems === 0) {
       iziToast.success({
         title: 'Success',
         message: `Hooray! We found ${totalHits} images.`,
