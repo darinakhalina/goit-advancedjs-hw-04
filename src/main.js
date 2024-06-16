@@ -74,7 +74,6 @@ async function loadData() {
       });
     }
 
-    console.log(hits[0]);
     renderGallery(hits);
     lightbox.refresh();
     loadedItems += hits.length;
@@ -134,8 +133,7 @@ function renderGallery(cards) {
               </p>
             </div>
           </div>
-        </a>
-  `;
+        </a>`;
       }
     )
     .join('');
