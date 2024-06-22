@@ -87,9 +87,13 @@ async function loadData() {
 
     if (loadedItems >= totalHits) {
       observer.disconnect();
+      iziToast.info({
+        title: 'Info',
+        message: 'You have viewed all available images.',
+        position: 'topRight',
+      });
     }
   } catch (error) {
-    console.log(error);
     iziToast.error({
       title: 'Error',
       message: 'Oops! Something went wrong! Try reloading the page!',
